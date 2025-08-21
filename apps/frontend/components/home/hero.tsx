@@ -7,9 +7,6 @@ export default function Hero() {
 	return (
 		<BackgroundContainer>
 			<div className="relative mb-4 h-[30vh] w-full ">
-				<div className="flex items-center justify-center mb-20">
-					<GitHubStarBadge />
-				</div>
 
 				<h1 className="text-center text-8xl font-semibold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.sky.500),theme(colors.pink.400),theme(colors.violet.600),theme(colors.blue.300),theme(colors.purple.400),theme(colors.pink.300),theme(colors.sky.500))] bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
 					Resume Matcher
