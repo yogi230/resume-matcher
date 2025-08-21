@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     LLM_API_KEY: Optional[str] = None
     LLM_BASE_URL: Optional[str] = None
     LL_MODEL: Optional[str] = "gemma3:4b"
+    API_VERSION: Optional[str] = ""
     EMBEDDING_PROVIDER: Optional[str] = "ollama"
     EMBEDDING_API_KEY: Optional[str] = None
     EMBEDDING_BASE_URL: Optional[str] = None

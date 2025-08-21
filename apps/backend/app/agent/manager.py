@@ -39,6 +39,18 @@ class AgentManager:
                 return OpenAIProvider(model_name=self.model,
                                       api_key=api_key,
                                       opts=opts)
+            case 'azure_openai':
+                from .providers.azure_openai import AzureOpenAIProvider
+                api_key = opts.get("llm_api_key", settings.LLM_API_KEY)
+                endpoint = opts.get("llm_base_url", settings.LLM_BASE_URL)
+                api_version = opts.get("api_version", os.getenv("API_VERSION"))
+                return AzureOpenAIProvider(
+                    model_name=self.model,
+                    api_key=api_key,
+                    api_endpoint=endpoint,
+                    api_version=api_version,
+                    opts=opts,
+                )
             case 'ollama':
                 from .providers.ollama import OllamaProvider
                 model = opts.get("model", self.model)
