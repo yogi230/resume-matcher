@@ -92,7 +92,7 @@ export default function JobDescriptionUploadTextArea() {
 			<div className="mb-6 relative">
 				<label
 					htmlFor="jobDescription"
-					className="bg-zinc-950/80 text-white absolute start-1 top-0 z-10 block -translate-y-1/2 px-2 text-xs font-medium group-has-disabled:opacity-50"
+					className="bg-zinc-950/80 text-white absolute start-1 top-0 z-10 block -translate-y-1/2 px-2 text-xs font-medium group-has-disabled:opacity-10"
 				>
 					Job Description <span className="text-red-500">*</span>
 				</label>
@@ -104,7 +104,7 @@ export default function JobDescriptionUploadTextArea() {
 					required
 					aria-required="true"
 					placeholder="Paste the job description here..."
-					className="w-full bg-gray-800/30 focus:ring-1 border rounded-md dark:border-gray-600 focus:border-blue-500 focus:ring-blue-500/50 border-gray-300 min-h-[300px]"
+					className="w-full focus:ring-1 border rounded-md dark:border-gray-600 focus:border-blue-500 focus:ring-blue-500/50 border-gray-300 min-h-[300px] bg-background text-foreground"
 				/>
 			</div>
 
